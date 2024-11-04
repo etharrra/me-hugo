@@ -1,0 +1,50 @@
+{{ if .Site.Data.homepage.projects.enable }}
+<section id="projects" class="section-experience section section--border-bottom rad-animation-group">
+  <div class="container">
+    <h2 class="rad-animation-group rad-fade-down">
+      {{ .Site.Data.homepage.projects.title }}
+    </h2>
+    <div class="row flex-column-reverse flex-md-row rad-fade-down">
+      <div class="col-12 mt-5 mt-sm-0">
+        {{ $xp := (where .Site.RegularPages "Type" "projects") }}
+        {{ $xp := sort $xp ".Params.weight" "asc" }}
+        {{ $xpCount := len $xp }}
+        {{/* in the homepage we limit to the homepageProjectCount param (6 by default) in the inner page (experience) we display the all */}}
+        {{ $totalCount := .Site.Params.homepageProjectCount }}
+
+        {{ if not .IsHome }}
+        {{ $totalCount = len $xp }}
+        {{ end }}
+        <div class="row">
+          {{ range first $totalCount $xp }}
+          <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+            <div class="experience">
+              <a href="{{.Permalink}}">
+                {{/* The context, ".", is now each one of the pages as it goes
+                            through the loop */}}
+                <div class="experience__title">{{ .Params.title }}</div>
+                <div class="experience__company">
+                  <span class="experience__location">{{ .Params.stack }}</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        {{ if gt $xpCount $totalCount }}
+        <div class="all-experience-container">
+          {{ $xpExtra := sub $xpCount $totalCount }}
+          <em>And {{ $xpExtra }} more</em><br />
+          <a href="{{ absURL "projects" }} " title=" See additional {{ $xpExtra }} projects items"
+            class="btn btn-primary btn-all-experience">
+            <i class="{{ .Site.Data.homepage.projects.button.icon }}"></i>
+            {{ .Site.Data.homepage.projects.button.btnText }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

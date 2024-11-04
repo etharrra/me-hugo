@@ -1,0 +1,147 @@
+# page title
+head:
+    title: "THARHTOO"
+    description: ""
+# showcase
+showcase:
+    enable: true
+    title: "Hello, I'm Thar"
+    subtitle: "Backend Developer"
+    description: >
+        Based in Bangkok, Thailand, originally from Yangon, Myanmar, passionate about programming and eager to learn new technologies and skills to further enhance my expertise in the field.
+    image:
+        x: "images/showcase/avatar.jpg"
+        _2x: "images/showcase/avatar.jpg"
+    imageMobile:
+        x: "images/showcase/avatar.jpg"
+
+    button:
+        icon: "icon-mail-fill"
+        btnText: "Contact"
+        URL: "https://www.adrianmoreno.info/"
+
+    socialLinks:
+        - icon: "linkedin"
+          URL: "https://www.linkedin.com/in/etharrra/"
+
+        - icon: "github"
+          URL: "https://github.com/etharrra"
+
+        - icon: "instagram"
+          URL: "https://www.instagram.com/etharrra/"
+
+        - icon: "facebook"
+          URL: "https://www.facebook.com/etharrra/"
+
+# about
+about:
+    enable: true
+    title: "Who am I?"
+    content: >
+        <p class="lead">
+          I am a results-driven Backend Developer with over four years of experience crafting dynamic and robust web applications. My expertise spans a wide array of programming languages, including Go, PHP, JavaScript, and Node.js, and I am proficient in frameworks like Laravel, Symfony, Gin, and Express.js. I have a proven track record in database management, leveraging technologies such as MySQL, MongoDB, Redis, and PostgreSQL to maintain data integrity and optimize performance.
+        </p>
+        <p class="lead">
+          My professional journey includes impactful contributions to e-commerce platforms, content management systems, and data-driven web solutions, where I consistently deliver high-quality, scalable, and efficient outcomes. Passionate about collaborative development and continuous learning, I excel in cross-functional teamwork and thrive in solving complex challenges that drive business growth and enhance user experience.
+        </p>
+    button:
+        icon: "icon-smile-fill"
+        btnText: "About Me"
+        URL: "https://www.linkedin.com/in/etharrra/"
+    image:
+        x: "images/who-am-i/developer.png"
+        _2x: "images/who-am-i/developer.png"
+
+# education
+education:
+    enable: true
+    title: "Education"
+    items:
+        - university: "University of West Yangon"
+          year: "2015-2019"
+          degree: "Bachelor of Arts (BA), English Literature"
+
+        - university: "KMD Institute"
+          year: "2019-2019"
+          degree: "Diploma in Web Development"
+
+# experience
+experience:
+    enable: true
+    title: "Experience"
+    description: >
+        With 4+ years of experience across various project types and teams, I have developed and architected digital solutions has driven impactful results across multiple industries, optimizing performance and enhancing digital interactions.
+    button:
+        icon: "icon-linkedin-fill"
+        btnText: "Linkedin"
+        URL: "https://www.linkedin.com/in/etharrra/"
+    button2:
+        icon: "icon-profile-fill"
+        btnText: "Download My Resume"
+        URL: "https://drive.google.com/file/d/1fhvFP0AFTr8rPbN29KEmd8vJgORnuwCX/view?usp=sharing"
+
+# Client & Work
+projects:
+    title: "Projects"
+    enable: true
+    button:
+        icon: "icon-profile-fill"
+        btnText: "All Projects"
+        URL: ""
+
+# testimonial
+testimonial:
+    enable: false
+    title: "Testimonials"
+    items:
+        - name: "Daniel Jordan"
+          position: "Phonet, CEO"
+          content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+          image:
+              x: "images/testimonials/daniel-jordan.jpg"
+              _2x: "images/testimonials/daniel-jordan@2x.jpg"
+
+        - name: "Jonathan Peters"
+          position: "Textic, CEO"
+          content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+          image:
+              x: "images/testimonials/jonathan-peters.jpg"
+              _2x: "images/testimonials/jonathan-peters@2x.jpg"
+
+        - name: "Antonio Willis"
+          position: "Cyberse, CEO"
+          content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+          image:
+              x: "images/testimonials/antonio-willis.jpg"
+              _2x: "images/testimonials/antonio-willis@2x.jpg"
+
+# contact
+contact:
+    enable: true
+    title: "Contact"
+    form:
+        action: "https://formspree.io/f/mvgokndn"
+        method: "POST"
+        full_name: "Full Name"
+        email: "Email Address"
+        message: "Type Your Message Here"
+    phone:
+        title: "Phone Number"
+        number: "+66 804513385"
+    email:
+        title: "Email"
+        email: '<a href="mailto:iterdare.2977@gmail.com">iterdare.2977@gmail.com</a>'
+    address:
+        title: "Address"
+        address: "Bangkok, Thailand"
+    button:
+        icon: "icon-mail-fill"
+        btnText: "Send Message"
+
+# newsletter
+newsletter:
+    enable: false
+    title: "Newsletter subscription"
+    success_message: "Successfully subscribed"
+    error_message: "Error while subscribing."
+    note: "We'll never share your email with anyone else."
