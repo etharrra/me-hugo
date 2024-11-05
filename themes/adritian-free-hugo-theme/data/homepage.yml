@@ -1,7 +1,8 @@
 # page title
 head:
     title: "THARHTOO"
-    description: ""
+    description: "Hi there! 👋 I'm Thar."
+    meta_img: "images/showcase/meta.png"
 # showcase
 showcase:
     enable: true
